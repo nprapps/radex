@@ -34,6 +34,13 @@ def comments():
     """
     return render_template('comments.html', **make_context())
 
+@app.route('/about/')
+def about():
+    """
+    about
+    """
+    return render_template('about.html', **make_context())
+
 @app.route('/widget.html')
 def widget():
     """
