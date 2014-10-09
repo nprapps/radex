@@ -17,6 +17,7 @@ $(document).ready(function() {
 		$(this).toggleClass( "audio-paused" );
 	});
 
+    //modals
     
     
 });
