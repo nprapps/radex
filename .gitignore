@@ -49,5 +49,6 @@ www/assets/*
 !www/assets/assetsignore
 data/gdoc*.csv
 www/comments/index.html
+www/prototypes/
 analytics.json
 analytics.txt
