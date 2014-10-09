@@ -34,12 +34,12 @@ def comments():
     """
     return render_template('comments.html', **make_context())
 
-@app.route('/about/')
-def about():
+@app.route('/soundscape2.html')
+def soundscape2():
     """
-    about
+    soundscape2
     """
-    return render_template('about.html', **make_context())
+    return render_template('soundscape2.html', **make_context())
 
 @app.route('/widget.html')
 def widget():

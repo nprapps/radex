@@ -1,22 +1,18 @@
 $(document).ready(function() {
 
-    var sound = new Howl({
-      urls: ['assets/bayaka.mp3'],
-      autoplay: false,
-      loop: true,
-      volume: 0.7,
+    var mySound = new buzz.sound("/assets/bayaka", {
+    formats: [ "mp3"],
+    preload: true,
+    autoplay: true,
+    loop: true
     });
-
     
-    $('#ex1-play').on('click', function(){
-		sound.stop().play();
+
+
+	$('.audio-controls').on('click', function(){
+		mySound.togglePlay();
+		$(this).toggleClass( "audio-paused" );
 	});
-	$('#ex1-pause').on('click', function(){
-		sound.pause();
-	});
-	
-	//mute all videos
-	$("video").prop('muted', true);
     
     
 });
