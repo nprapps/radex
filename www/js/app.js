@@ -1,12 +1,12 @@
 $(document).ready(function() {
 
     $('body').css('opacity', 1);
-    $('.titlecard').css('opacity', 0);
+    //
     
 
     var mySound = new buzz.sound("http://stage-apps.npr.org/radex/assets/bayaka-binaural.mp3", {
     preload: true,
-    autoplay: true,
+    autoplay: false,
     loop: true
     });
     
@@ -17,7 +17,16 @@ $(document).ready(function() {
 		$(this).toggleClass( "audio-paused" );
 	});
 
-    //modals
+    //start screen
+    
+    $('.btn-go').on('click', function(){
+		mySound.play();
+		$('.start-screen').addClass( "enter-soundscape" );
+		
+		$('.soundscape').css('opacity', 1);
+		$('.titlecard').css('opacity', 0);
+		
+	});
     
     
 });

@@ -7,65 +7,82 @@
 
 {% block content %}
 
-<!--
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h1>12</h1>
-                <h1>{{ COPY.content.project_name }}</h1>
+
+
+<div class="start-screen">
+
+    <div class="full-block introduction">
+        <div class="full-block-cell">
+            <div class="full-block-content">
+                <h1>Radio Expeditions Prototype</h1>
+                <p>This is an experimental interface designed by NPR and the Cornell Lab of Ornithology for listening to binaural (3D soundscapes) of our world's threatened environments and diverse cultures. To fully experience the sounds in this experience, <b>please put on your headphones</b> <i class="fa fa-headphones"></i>.</p>
                 
-                <a href="about">about</a>
+                <button class="btn-go">Go</button>
+                
+                
+        
             </div>
         </div>
-    </div>
--->
+        
+    </div><!-- titlecard -->
 
-<div class="primary-nav" data-toggle="modal" data-target="#site-index"><i class="fa fa-bars"></i></div>
-<div class="audio-controls">
-    <i class="fa fa-volume-up"></i>
-    <i class="fa fa-volume-off"></i>
-</div>
-
-<div class="direction-nav">
-    <div class="north"><i class="fa fa-chevron-up"></i></div>
-    <div class="east"><i class="fa fa-chevron-right"></i></div>
-    <div class="south"><i class="fa fa-chevron-down"></i></div>
-    <div class="west">
-        <a href="soundscape2.html">
-            <i class="fa fa-chevron-left"></i>
-        </a>
-    </div>
-</div>
-
-<div class="full-block titlecard">
-    <div class="full-block-cell">
-        <div class="full-block-content">
-            <h1>Bayaka</h1>
-            <p>A shimmering evening fantasia of insect song and the singing of Bayaka men sitting in a circle illuminated only by firelight and stars.</p>
     
-            <!--<button class="btn btn-go"></button>-->
+</div>
+
+<div class="soundscape">
+
+    <div class="full-block titlecard">
+        <div class="full-block-cell">
+            <div class="full-block-content">
+                <h1>Bayaka</h1>
+                <p>A shimmering evening fantasia of insect song and the singing of Bayaka men sitting in a circle illuminated only by firelight and stars.</p>
+        
+            </div>
+        </div>
+        
+    </div><!-- titlecard -->
+    
+    <div id="video-bg">
+
+      <video id="bg-vid" autoplay loop>
+        <source type="video/mp4" src="assets/fire.mp4">
+        <source type="video/webm" src="assets/fire.webm">
+      </video>
+    
+    </div>
+    
+    <div class="primary-nav" data-toggle="modal" data-target="#site-index"><i class="fa fa-bars"></i></div>
+    <div class="audio-controls">
+        <i class="fa fa-volume-up"></i>
+        <i class="fa fa-volume-off"></i>
+    </div>
+    
+    <div class="direction-nav">
+        <div class="north"><i class="fa fa-chevron-up"></i></div>
+        <div class="east"><i class="fa fa-chevron-right"></i></div>
+        <div class="south"><i class="fa fa-chevron-down"></i></div>
+        <div class="west">
+            <!--<a href="soundscape2.html"></a>-->
+                <i class="fa fa-chevron-left"></i>
+            
         </div>
     </div>
     
-</div>
+    <div class="annotation" data-toggle="modal" data-target="#annotation-modal">
+        <p>
+            Dzanga-Sangha Special Reserve 3&deg;6'N 16&deg;20'E
+            <b>more info <i class="fa fa-question-circle"></i></b>
+        </p>
+    </div>
+</div><!--/soundscape-->
 
 
-<div id="video-bg">
-
-  <video id="bg-vid" autoplay loop>
-    <source type="video/mp4" src="assets/fire.mp4">
-    <source type="video/webm" src="assets/fire.webm">
-  </video>
-
-</div>
 
 
-<div class="annotation" data-toggle="modal" data-target="#annotation-modal">
-    <p>
-        Dzanga-Sangha Special Reserve 3&deg;6'N 16&deg;20'E
-        <b>more info <i class="fa fa-question-circle"></i></b>
-    </p>
-</div>
+
+
+
+
 
 <!-- annotation modal -->
 <div class="modal fade" data-backdrop="static" id="annotation-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
