@@ -43,7 +43,7 @@
 // Actual modal
 .modal-content {
   position: relative;
-  background-color: @modal-content-bg;
+  background-color: transparent;
   border: 1px solid @modal-content-fallback-border-color; //old browsers fallback (ie8 etc)
   border: 1px solid @modal-content-border-color;
   border-radius: @border-radius-large;
@@ -64,7 +64,7 @@
   background-color: @modal-backdrop-bg;
   // Fade for backdrop
   &.fade { .opacity(0); }
-  &.in { .opacity(.5); }
+  &.in { .opacity(1); }
 }
 
 // Modal header
@@ -90,6 +90,7 @@
 .modal-body {
   position: relative;
   padding: @modal-inner-padding;
+  
 }
 
 // Footer (for actions)

@@ -20,7 +20,7 @@
     </div>
 -->
 
-<div class="primary-nav"><i class="fa fa-bars"></i></div>
+<div class="primary-nav" data-toggle="modal" data-target="#site-index"><i class="fa fa-bars"></i></div>
 <div class="audio-controls">
     <i class="fa fa-volume-up"></i>
     <i class="fa fa-volume-off"></i>
@@ -37,7 +37,7 @@
     </div>
 </div>
 
-<div class="full-block">
+<div class="full-block titlecard">
     <div class="full-block-cell">
         <div class="full-block-content">
             <h1>Bayaka</h1>
@@ -51,10 +51,12 @@
 
 
 <div id="video-bg">
+
   <video id="bg-vid" autoplay loop>
     <source type="video/mp4" src="assets/fire.mp4">
     <source type="video/webm" src="assets/fire.webm">
   </video>
+
 </div>
 
 <div class="annotation">
@@ -62,6 +64,24 @@
         Bayaka 0&deg;00'N 25&deg;00'E
         <b>more info <i class="fa fa-question-circle"></i></b>
     </p>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="site-index" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" ><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+        
+        <p data-dismiss="modal"><i class="fa fa-times"></i></p>
+      </div>
+      <div class="modal-body">
+        
+      </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 {% endblock %}

@@ -1,7 +1,10 @@
 $(document).ready(function() {
 
-    var mySound = new buzz.sound("/assets/bayaka", {
-    formats: [ "mp3"],
+    $('body').css('opacity', 1);
+    $('.titlecard').css('opacity', 0);
+    
+
+    var mySound = new buzz.sound("http://stage-apps.npr.org/radex/assets/bayaka-binaural.mp3", {
     preload: true,
     autoplay: true,
     loop: true
@@ -13,6 +16,7 @@ $(document).ready(function() {
 		mySound.togglePlay();
 		$(this).toggleClass( "audio-paused" );
 	});
+
     
     
 });
